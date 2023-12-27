@@ -1,7 +1,11 @@
 # Experiment--05-Implementation-of-flipflops-using-verilog
-### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+### AIM: 
+
+To implement all the flipflops using verilog and validating their functionality using their functional tables
+### HARDWARE REQUIRED:  
+– PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED:   
+Quartus prime
 ### THEORY 
 SR Flip-Flop
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
@@ -102,39 +106,100 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+
+
+Procedure
+1.	Create a New Project:
+
+     Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+     Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+
+2.	Create a New Design File:
+
+      Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+      Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+
+3.	Write the Combinational Logic Code:
+
+      Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+
+4.	Compile the Project:
+      
+      To compile the project, click on "Processing" > "Start Compilation" in the menu.
+      Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+
+5.	Analyze and Fix Errors:
+
+       If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+       Review and fix any issues in your code if necessary. View the RTL diagram.
+
+6.	Verification:
+      
+       Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+ 
+       Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+       Give the Input Combinations according to the Truth Table amd then simulate the
+       Output Waveform.
+
 
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+
+Developed by: VARNIKA.P
+
+RegisterNumber: 23008344 
 */
 
+## T-Flip Flop
+
+![Alt text](image-2.png)
 
 
+## D-FlipFlop
 
+![Alt text](image-3.png)
 
+## SR-Flip Flop
+
+![Alt text](image.png)
+
+## JK-Flip Flop
+
+![Alt text](image-1.png)
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+## T-flipflop
+![Alt text](image-5.png)
 
+## D-flipflop
+![Alt text](image-4.png)
 
+## SR-flipflop
+![Alt text](image-6.png)
 
-
+## JK-flipflop
+![Alt text](image-7.png)
 
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+## T-flipflop
+![Alt text](image-11.png)
 
+## D-flipflop
+![Alt text](image-10.png)
 
+## SR-flipflop
+![Alt text](image-8.png)
 
-
-
-
+## JK-flipflop
+![Alt text](image-9.png)
 
 ### RESULTS 
+By this we have verified the truth table of,T,D, JK and SR using verilog
